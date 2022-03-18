@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+	  xmlns:fx="http://javafx.com/fxml"
+	  fx:controller="org.diligentsnail.javafxdemos.sizingalignment.OtherTabController"
+	  alignment="CENTER"
+	  spacing="16">
+
+	<fx:define>
+		<Font fx:id="bigFont" size="36"/>
+	</fx:define>
+
+	<padding>
+		<Insets>
+			<top>16</top>
+			<left>16</left>
+			<bottom>16</bottom>
+			<right>16</right>
+		</Insets>
+	</padding>
+	<Text text="Hello" fx:id="helloText" font="$bigFont"/>
+	<Text text="Hello" fx:id="helloText2"/>
+	<TextField fx:id="nameTextField" promptText="Your name"/>
+</VBox>

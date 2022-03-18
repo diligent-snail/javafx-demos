@@ -1,0 +1,32 @@
+= JavaFX demos
+
+== Демо
+
+. Как растягивать и выравнивать элементы разметки -- link:src/main/java/org/diligentsnail/javafxdemos/sizingalignment/SizingAlignmentApplication.java[`SizingAlignmentApplication`]
+.. Основано на примере от Oracle -- https://docs.oracle.com/javase/8/javafx/layout-tutorial/layoutsizingaligningjava.htm#BABFGJAD[`LayoutSizingAligning`]
+. Как динамически менять размеры не-resizable элементов -- link:src/main/java/org/diligentsnail/javafxdemos/resizablecircle/ResizableCircleApplication.java[`ResizableCircleApplication`].
+Примеры не-resizable элементов:
+.. https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/shape/Circle.html[`Circle`]
+.. https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/shape/Rectangle.html[`Rectangle`]
+.. https://openjfx.io/javadoc/17/javafx.graphics/javafx/scene/text/Text.html[`Text`]
+. https://openjfx.io/javadoc/17/javafx.base/javafx/beans/binding/package-summary.html[`Binding`], https://openjfx.io/javadoc/17/javafx.base/javafx/beans/property/package-summary.html[`Property`] -- link:src/main/java/org/diligentsnail/javafxdemos/sizingalignment/OtherTabController.java[`OtherTabController`] и link:src/test/java/org/diligentsnail/javafxdemos/PropertiesTest.java[`PropertiesTest`]
+
+== Ссылки
+
+=== Статьи
+
+==== Oracle
+
+. https://docs.oracle.com/javase/8/javafx/layout-tutorial/builtin_layouts.htm[Using Built-in Layout Panes]
+. https://docs.oracle.com/javase/8/javafx/layout-tutorial/size_align.htm[Tips for Sizing and Aligning Nodes]
+. https://openjfx.io/javadoc/17/javafx.fxml/javafx/fxml/doc-files/introduction_to_fxml.html[Introduction to FXML]
+
+==== eden/coding
+
+. https://edencoding.com/scene-background/[How to set the JavaFX Scene Background]
+. https://edencoding.com/javafx-properties-and-binding-a-complete-guide/[JavaFX Properties and Binding – A Complete Guide]
+
+=== Stackoverflow
+
+. https://stackoverflow.com/q/23861008/6486622[Constants in an FXML file]
+. https://stackoverflow.com/q/23272924/6486622[Dynamically add elements to a fixed-size GridPane in JavaFX]

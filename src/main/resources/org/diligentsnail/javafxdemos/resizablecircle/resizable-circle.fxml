@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+			xmlns:fx="http://javafx.com/fxml"
+			fx:controller="org.diligentsnail.javafxdemos.resizablecircle.ResizableCircleController"
+			fx:id="anchorPane">
+
+	<Circle AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" fill="aqua" radius="20" fx:id="circle"/>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import java.lang.Double?>
+<?import java.lang.String?>
+<TabPane xmlns="http://javafx.com/javafx"
+		 xmlns:fx="http://javafx.com/fxml">
+
+	<fx:define>
+		<Double fx:id="DEFAULT_SPACING" fx:value="16"/>
+	</fx:define>
+
+	<Tab text="Sizing" closable="false">
+		<BorderPane>
+			<padding>
+				<Insets top="$DEFAULT_SPACING"
+						left="$DEFAULT_SPACING"
+						right="$DEFAULT_SPACING"
+						bottom="$DEFAULT_SPACING"/>
+			</padding>
+
+			<center>
+				<ListView>
+					<BorderPane.margin>
+						<Insets right="$DEFAULT_SPACING"/>
+					</BorderPane.margin>
+					<items>
+						<FXCollections fx:factory="observableArrayList">
+							<String fx:value="Everything i wanted"/>
+							<String fx:value="Summertime Sadness"/>
+							<String fx:value="Dosed"/>
+						</FXCollections>
+					</items>
+				</ListView>
+			</center>
+
+			<right>
+				<VBox spacing="8">
+					<Button maxWidth="Infinity" text="Move up"/>
+					<Button maxWidth="Infinity" text="Move down"/>
+					<Button maxWidth="Infinity" text="Add"/>
+					<Button maxWidth="Infinity" text="Remove"/>
+				</VBox>
+			</right>
+
+			<bottom>
+				<HBox alignment="CENTER_RIGHT">
+					<Text text="My simple text"/>
+				</HBox>
+			</bottom>
+		</BorderPane>
+
+	</Tab>
+
+	<Tab text="Other">
+		<fx:include source="other-tab.fxml"/>
+	</Tab>
+
+</TabPane>
